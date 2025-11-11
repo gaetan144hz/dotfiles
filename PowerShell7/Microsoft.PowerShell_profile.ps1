@@ -16,3 +16,11 @@ if (Get-Command fastfetch -ErrorAction SilentlyContinue) {
 function cleanup {
     & "C:\Users\gaeta\Documents\Repos\useful_bat_files\utils\pc_cleanup_utility.bat"
 }
+
+function create_asset {
+    & "C:\Users\gaeta\Documents\Repos\useful_bat_files\utils\create_asset.bat"
+}
+
+function create_project {
+    & "C:\Users\gaeta\Documents\Repos\useful_bat_files\utils\create_project.bat"
+}
