@@ -10,5 +10,9 @@ Clear-Host
 
 # Force Fastfetch to use YOUR config every time (bypass path confusion)
 if (Get-Command fastfetch -ErrorAction SilentlyContinue) {
-    fastfetch -c "C:/Users/%USERPROFILE%/.config/fastfetch/config.jsonc"
+    fastfetch -c "C:/Users/gaeta/.config/fastfetch/config.jsonc"
+}
+
+function cleanup {
+    & "C:\Users\gaeta\Documents\Repos\useful_bat_files\utils\pc_cleanup_utility.bat"
 }
