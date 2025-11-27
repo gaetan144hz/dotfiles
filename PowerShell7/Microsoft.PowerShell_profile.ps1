@@ -10,17 +10,22 @@ Clear-Host
 
 # Force Fastfetch to use YOUR config every time (bypass path confusion)
 if (Get-Command fastfetch -ErrorAction SilentlyContinue) {
-    fastfetch -c "C:/Users/gaeta/.config/fastfetch/config.jsonc"
+    fastfetch -c "C:/Users/%USERPROFILE%/.config/fastfetch/config.jsonc"
 }
 
 function cleanup {
-    & "C:\Users\gaeta\Documents\Repos\useful_bat_files\utils\pc_cleanup_utility.bat"
+    & "C:\Users\%USERPROFILE%\Documents\Repos\useful_bat_files\utils\pc_cleanup_utility.bat"
 }
 
 function create_asset {
-    & "C:\Users\gaeta\Documents\Repos\useful_bat_files\utils\create_asset.bat"
+    & "C:\Users\%USERPROFILE%\Documents\Repos\useful_bat_files\utils\create_asset.bat"
 }
 
 function create_project {
-    & "C:\Users\gaeta\Documents\Repos\useful_bat_files\utils\create_project.bat"
+    #& "C:\Users\%USERPROFILE%\Documents\Repos\useful_bat_files\src_pipeline\project_folder_creator.bat"
+    & "C:\Users\%USERPROFILE%\Documents\Repos\Script-Tools\python\Arborescence Creator App\arborescence_folder_creator.pyw"
+}
+
+function robocopygui {
+    & "C:\Users\%USERPROFILE%\Documents\Repos\Script-Tools\python\Robocopy_App\robocopy.pyw"
 }
